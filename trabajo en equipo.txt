@@ -1,0 +1,65 @@
+Algoritmo PROYECTOXWOMAN
+	Definir codigo, a,b,c,n,num,d Como real 
+	Definir x como cadena 
+	Escribir "SELECCIONA UN NÚMERO PARA EL PROGRAMA QUE DESEAS EJECUTAR:";
+	Escribir "1 - SUCESION DE FIBONACCI"; //Nefta
+	Escribir "2 - PIRÁMIDE DE CARACTERES"; //Melanie
+	Escribir "3 - OPERACIONES BÁSICAS"; //Sonia
+	leer codigo;
+	Segun codigo hacer
+		1: //espacio de Nefta
+			Escribir "ingresa un número: ";
+			leer num;
+			a<-0
+			b<-1
+			Mientras a<num Hacer
+				Escribir a;
+				c<-a+b;
+				a<-b;
+				b<-c;
+			FinMientras	
+		2: //espacio de Melanie
+			Escribir "Dame un numero";
+			leer n
+			Escribir "dame un signo";
+			leer x;
+			para a=n hasta 1 Con Paso -1
+				para b=1 hasta a con paso 1
+					Escribir " " Sin Saltar
+				FinPara
+				para c=a hasta n Con Paso 1 Hacer
+					Escribir x," " Sin Saltar
+				FinPara
+				Escribir ""
+			FinPara
+		3: //espacio de Sonia
+			Escribir "Escribe dos numeros"
+			leer a,b
+			d = 0
+			Mientras d <> 5 hacer
+				escribir "Elige una opcion "
+				Escribir "1 = suma"
+				Escribir "2 = resta"
+				Escribir "3 = multiplicacion "
+				Escribir "4 = division"
+				Escribir "5 = potencia"
+				Escribir "6 = salir"
+				leer d
+				
+				segun d
+					1:
+						Escribir "La suma de ",a," + ",b," = ",a+b
+					2:
+						Escribir "La resta de ",a," - ",b," = ",a-b
+					3:
+						Escribir "La multiplicacion de ",a," x ",b," = ",a*b
+					4:
+						Escribir "La division de ",a," / ",b," = ",a/b
+					5:
+						Escribir "la potencia de ",a," ^ ",b," = ",a^b
+					De Otro Modo:
+						d = 5
+				FinSegun
+			FinMientras
+	FinSegun
+FinAlgoritmo
